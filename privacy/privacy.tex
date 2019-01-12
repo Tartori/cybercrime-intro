@@ -1,0 +1,128 @@
+
+\documentclass[12pt]{article}
+\usepackage{scicite}
+\usepackage{url}
+\usepackage{times}
+\usepackage{xcolor}
+
+\topmargin 0.0cm
+\oddsidemargin 0.2cm
+\textwidth 16cm 
+\textheight 21cm
+\footskip 1.0cm
+
+\renewcommand\refname{References and Notes}
+
+\newcounter{lastnote}
+\newenvironment{scilastnote}{%
+\setcounter{lastnote}{\value{enumiv}}% 
+\addtocounter{lastnote}{+1}%
+\begin{list}%
+{\arabic{lastnote}.}
+{\setlength{\leftmargin}{.22in}}
+{\setlength{\labelsep}{.5em}}}
+{\end{list}}
+
+\title{Privacy and Law Enforcement} 
+
+
+% Place the author information here.  Please hand-code the contact
+% information and notecalls; do *not* use \footnote commands.  Let the
+% author contact information appear immediately below the author names
+% as shown.  We would also prefer that you don't change the type-size
+% settings shown here.
+
+\author
+{Julian Stampfli\\
+\\
+\normalsize{Department of Information Technology, Berner Fachhochschule}\\
+}
+
+\date{\today}
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%
+
+
+
+\begin{document} 
+
+% Double-space the manuscript.
+
+\baselineskip24pt
+
+% Make the title.
+
+\maketitle 
+
+
+% In setting up this template for *Science* papers, we've used both
+% the \section* command and the \paragraph* command for topical
+% divisions.  Which you use will of course depend on the type of paper
+% you're writing.  Review Articles tend to have displayed headings, for
+% which \section* is more appropriate; Research Articles, when they have
+% formal topical divisions at all, tend to signal them with bold text
+% that runs into the paragraph, for which \paragraph* is the right
+% choice.  Either way, use the asterisk (*) modifier, as shown, to
+% suppress numbering.
+
+
+\section*{The importance of Privacy}
+
+Privacy is not a new topic and as such it was always important to protect the humans from an arbitrary invasion of this basic right. This is of such high importance that it has found its way into the UN Declaration of Human Rights, the ECHR and the federal constitution of Switzerland. \cite{humanRights, emrk, bvg} However, the playing field is changing. With the strong trend towards digitalization, the amount of data that is available for private citizens is ever growing. With it grows the importance of data protection to protect the citizens from totalitarian powers. \cite{digDat}
+
+With proper encryption and high data protection, citizens can communicate with each other without a third party knowing about it, which is one aspect of privacy. Thus they can say what they want without fear of punishment. This ability is a vital part of our society and an essential pillar in democracy. However, is this right undermined? In Switzerland, the telecommunication provider has to keep records of all phone calls and SMS and other metadata (who, when, what, where) for all of their customers for 6 months. The current law and jurisdiction consensus values privacy concerns less important than the ability of law enforcement agencies to find criminals using this data.\cite{randdatenTele} If this law is extended in such a way that the government can access all communication data, then they could easily censor opposition and control the masses. Even if those laws come with restrictions like it is only applicable to major crimes, the definition of a major crime could be adjusted in such a way that suits the current government. Thus the protection of our privacy is of paramount importance. \cite{guardianPrivacyTotalitarianState}
+
+An additional risk is that all this data could be made public by criminals or by some other means. This release would result in many attack possibilities for private citizens. Big data sores tend to be interesting targets for criminals since their data enables various criminal actions. The impact on society is mostly ignored. With the Ashley Madison leak, many people had to suffer grave consequences such as broken marriages, financial consequences and a higher risk of suicide. \cite{ashleyGeneral}  People got extorted and should they not pay up they were threatened with shaming. \cite{ashleyGuy}  Considering that this was a leak on a small portion of society; the impact of the release of all the telecommunication metadata would be inconceivable. 
+
+Those data stores are mostly well protected against such a data breach. But this could change. Law enforcement agencies wish to build backdoors and weaken encryption in general so that they can access data that is sent directly between two suspects. Should this be implemented our privacy could be circumvented. This circumvention might be acceptable enforcement as long as there won't be any misuse and the access would be proportionate. However, we don't want criminals sniffing in our data. Weakening protection enables them to access our data without our knowledge. Which might create an even bigger impact than if the data from those stores would be released. \cite{roundtable}
+
+There is always an outcry when new laws get introduced that aim to weaken encryption and create backdoors in systems. Australia has just passed such a law named the Bill Assistance and Access Bill. \cite{auBill} This bill aims to increase the potential to find criminals, mainly terrorists and child exploiters.  It requires technology companies to implement backdoors or weaken encryption so that all data can be examined in case of suspicion. However, it has widely received bad press and is the first anti-encryption law worldwide. \cite{auBillBad, auBillVeryBad}
+
+\section*{The importance of Law Enforcement}
+
+After reading the first part one might think that law enforcement is the root of all evil; it is not. The primary goal of law enforcement is to protect society from harm by weighing the need of the many against the need of the few. They must follow the law and can be punished if they go against it. \cite{policework}
+
+Criminals tend to change habits and adapt to new markets when they see the money. The digital world gives them a lot of new possibilities to hide their tracks, connect securely and internationally or commit new offenses. Due to secure end-to-end encryption law enforcement agencies are unable to investigate suspicious behaviour on the internet. With that restriction, their ability to protect and detect is seriously weakened. \cite{jabe2017}
+
+Similarly to citizens who had suffered when their privacy was broken, there are also cases where people suffered because the criminals couldn't be caught in time because of data protection concerns. Public victims of such crimes are children that have been or still are victim to child exploitation. The children are abused, and the material is shared throughout the world with the use of anonymization and encryption. It is hard to catch the criminals when they are cautious. Law enforcement and other actors still try hard and fight with what they have and thus there have been successes in the past. \cite{antipedo} But many of those crimes are unsolved, and many children might still be in the hands of the criminals. \cite{crimesAgainstChildren}
+
+Another important issue is terrorism. With the aid of the internet, terrorists can easily communicate and plan attacks cross-border. Additionally, it is easier for them to recruit new followers. Online activity can identify some of those aspiring followers. \cite{phasenRadikalisierung} For that, the law enforcement needs access to this activity data so that they can act on the information and prevent acts of terrorism. \cite{terrorism} Law enforcement agencies also always try to find new ways to prevent terrorist attacks using digital technologies. \cite{meetupTerrorism}
+
+Should law enforcement gain more potential to access anonymized and encrypted data they could prevent more attacks and solve more cases. Thus they could protect society as a whole better by preventing attacks and solving crimes. \cite{jabe2017}
+
+\section*{Privacy vs. Law Enforcement}
+
+As discussed above both the need for privacy and the ability of law enforcement agencies to solve crimes are essential for society. Without the first we would always have big brother watching us, without the latter we would sink into anarchy. Both are not ideal states for society. However, why do they conflict this much?
+
+As mentioned, with the ability to communicate securely and anonymized citizens can talk about political or social issues privately. The identical communication channel can be used by criminals to plan an attack, share data or discuss ways to exploit humans. With that, they take the good things about data protection and use it for illegal actions. Usually, the law enforcement agencies would have the possibility to invade the privacy of a suspect with judicial approval. They can go to his house and search for evidence, or they can tail him and spy on him. This strategy doesn't help them though if all his communication is encrypted and he has taken the necessary precautions. Such a criminal could be committing a crime while being physically watched without anyone knowing or being able to prove it. 
+
+Many parties see this as a big issue. Law enforcement agencies are some of the most vocal about this. Fedpol, as a national player, reminds people yearly about the difficulty of solving crimes in a digital world. \cite{jabe2017} They seem to be successful as they have much weight into the political discussion. Just recently the Swiss law was adopted in a way that weakened data protection. \cite{bupf} Most major parties accepted this new policy. Interestingly the young generation of those parties mostly opposed it. \cite{nzzBupfWho, nzzBupfWhat}
+
+However, there are also non-political parties involved in this discussion. The most vocal against any weakening of privacy rights are the Chaos Computer Club and various technology companies that specialize in data protection like Threema and various foundations that advocate for privacy like the pep foundation. \cite{stopbupf}  The opposition is not limited to technology companies specializing in security, other technology companies stand with them. For instance, Microsoft, Apple, and Google openly opposed the assistance and access bill from Australia. \cite{australiaBig} One smaller contestant called Signal states that they could not comply with the bill even if they wanted because they don't store any data, often not even metadata. \cite{australiaSmall}
+
+Both sides are well represented with strong arguments and strong influence. This equilibrium might be part of the reason why the discussion doesn't progress the way it should. No policy was passed that wasn't met with firm opposition from either side, while this is common in political discussions, it is very frustrating that such an important topic cannot be resolved to any satisfactory outcome. \cite{roundtable}
+
+\section*{Where to go from here?}
+
+As positions have become entrenched a solution seems far off. Especially when both sides have valid points, it is hard for private citizens and public figures alike to come up with a solution that satisfies all parties.
+
+What many parties don't consider is the fact that encryption and anonymization are part of a service. Many technology companies either offer high privacy with strong encryption and anonymization protocols or they use the customer data to display relevant advertisement and content. Law enforcement could be allowed access to a certain part of the collected data, which in turn should be communicated transparently to the users by the company. Apple currently has published information about what the government requests they get and how they reply to them. \cite{appleGovReq} By doing that the citizens can make a qualified choice on which services they want to use and how. 
+
+Another important factor is that criminal gangs can be infiltrated and as they are working with anonymization tools they cannot easily identify law enforcement officers either. Thus the job of an undercover cop in a digital society is easier and less dangerous. It is easier because they have multiple tries. In the real world, one officer can't try to infiltrate the same gang multiple times because he would be recognized. In the digital world, he can easily change his username and try again. Also because he can't be identified he deals with a smaller risk to end up dead. These infiltrations are one way to gain access to this encrypted data without the need to weaken the encryption or create a backdoor, simply because the law enforcement officers receive the data as well in an unencrypted form. There have been many criminals who have been convicted this way, especially criminals who tried to lure children by chatting them up. \cite{bgrChildSuccess}
+
+Important to note is that law enforcement needs to get lucky once to catch a criminal. The criminals need to be lucky every time with one mistake where they send messages over an insecure channel, and they can be caught. Moreover, when one criminal gets caught many others could fall as well because of metadata or other unencrypted communication data that is found by directly accessing the devices of the caught criminal. This way one arrest could lead to multiple convictions. Especially if the arrested can be turned against the other members. 
+
+Thus limiting the privacy of all citizens by including backdoors and weakening encryption is not needed for law enforcement to do a good job. They can already access a wealth of information publicly that never would have been available in the past. Moreover, by working with the service providers to better understand the publicly available information and to clearly define how to access the restricted data, they could catch many criminals without harming the whole population.
+
+Privacy should categorically be protected as it is a fundamental human right. Invasion of privacy should always only be possible after exhaustive weighing of interests. Backdoors and weakened encryption, even though powerful, are not proportionate as there are other ways to access the required data. It would also need to be reasonable which has to be decided from case to case. However, weakening the data protection of all citizens is not in their best interest and thus should be avoided.
+
+
+\clearpage
+
+\bibliography{privacy}
+
+\bibliographystyle{Science}
+
+
+
+\end{document}
